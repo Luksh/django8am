@@ -10,3 +10,12 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+class Feedback(models.Model):
+    name = models.CharField(max_length= 300)
+    post = models.CharField(max_length= 500)
+    image = models.TextField()
+    comment = models.TextField()
+
+    def __str__(self):
+        return self.name
